@@ -299,8 +299,6 @@ shadow_root.find_element(By.CSS_SELECTOR, 'input[type="file"]').send_keys(r"C:\U
 time.sleep(0.5)
 action.move_to_element(shadow_root.find_element(By.CSS_SELECTOR, 'a')).perform()
 time.sleep(0.5)
-print(shadow_root.find_element(By.CSS_SELECTOR, '#nested_shadow_host').shadow_root.find_element(By.CSS_SELECTOR, '#nested_shadow_content').text)
-time.sleep(1)
 
 action.move_to_element(driver.find_element(By.ID, 'samsung')).perform()
 time.sleep(0.5)
