@@ -64,7 +64,7 @@ driver.find_element(By.ID, "end-date").send_keys("04/09/2026")
 time.sleep(0.5)
 
 driver.find_element(By.CLASS_NAME, "submit-btn").click()
-time.sleep(1)
+time.sleep(0.5)
 
 home_txt = driver.find_element(By.LINK_TEXT, "Home")
 action.move_to_element(home_txt).perform()
@@ -143,17 +143,23 @@ time.sleep(0.5)
 action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz')).perform()
 time.sleep(0.5)
 
-action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz Saxophone')).perform()
+action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz fusion')).perform()
 time.sleep(0.5)
 
-action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz Singers')).perform()
+action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazzar Pasha')).perform()
 time.sleep(0.5)
 
-shrek_2 = driver.find_element(By.LINK_TEXT, 'Best Jazz')
-action.move_to_element(shrek_2).perform()
+action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz (Queen Album)')).perform()
 time.sleep(0.5)
 
-shrek_2.click()
+action.move_to_element(driver.find_element(By.LINK_TEXT, 'Jazz Age')).perform()
+time.sleep(0.5)
+
+jazz_2 = driver.find_element(By.LINK_TEXT, 'Jazz')
+action.move_to_element(jazz_2).perform()
+time.sleep(0.5)
+
+jazz_2.click()
 time.sleep(2)
 
 driver.switch_to.window(driver.window_handles[-1])
